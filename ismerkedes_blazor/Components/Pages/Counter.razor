@@ -1,14 +1,14 @@
 ﻿@page "/counter"
 @rendermode InteractiveServer
 
-<PageTitle>Counter</PageTitle>
+<PageTitle>Számláló</PageTitle>
+<!-- markup törzs  ide irjuk be a HTML code-okat-->
+<h1>Számláló</h1>
 
-<h1>Counter</h1>
+<p role="status">Jelenlegi érték: @currentCount</p>
 
-<p role="status">Current count: @currentCount</p>
-
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
-
+<button class="btn btn-primary" @onclick="IncrementCount">Ide kattints</button>
+<!-- markup törzs-->
 @code {
 
     //[Parameter ] //0sszetevő paraméter : paraméter, sply, fromform,  regex ... 
